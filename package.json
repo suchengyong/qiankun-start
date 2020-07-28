@@ -1,0 +1,31 @@
+{
+  "name": "qiankun-start",
+  "version": "1.0.0",
+  "description": "微服务应用框架",
+  "main": "index.js",
+  "scripts": {
+    "install:all": "npm-run-all --serial install:*",
+    "start:all": "npm-run-all --parallel start:*",
+    "install:base": "cd qiankun-base && yarn",
+    "start:base": "cd qiankun-base && yarn serve",
+    "install:react": "cd qiankun-react && yarn",
+    "start:react": "cd qiankun-react && yarn start",
+    "install:vue": "cd qiankun-vue && yarn",
+    "start:vue": "cd qiankun-vue && yarn serve",
+    "install:static": "cd qiankun-static && yarn",
+    "start:static": "cd qiankun-static && yarn start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suchengyong/qiankun-start.git"
+  },
+  "author": "suchengyong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suchengyong/qiankun-start/issues"
+  },
+  "homepage": "https://github.com/suchengyong/qiankun-start",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}

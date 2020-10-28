@@ -1,13 +1,18 @@
 const path = require("path");
+const packageName = require('./package.json').name;
 
 module.exports = {
   webpack: (config) => {
+    // 解决主应用接入后会挂掉的问题：https://github.com/umijs/qiankun/issues/340
+    config.entry = config.entry.filter(
+      (e) => !e.includes('webpackHotDevClient')
+    );
     // 微应用的包名，这里与主应用中注册的微应用名称一致
-    config.output.library = `ReactApp`;
+    config.output.library = `${packageName}`;
     // 将你的 library 暴露为所有的模块定义下都可运行的方式
     config.output.libraryTarget = "umd";
-    // 按需加载相关，设置为 webpackJsonp_VueMicroApp 即可
-    config.output.jsonpFunction = `webpackJsonp_ReactApp`;
+    // 按需加载相关，设置为 webpackJsonp_packageName 即可
+    config.output.jsonpFunction = `webpackJsonp_${packageName}`;
     config.resolve.alias = {
       ...config.resolve.alias,
       "@": path.resolve(__dirname, "src"),

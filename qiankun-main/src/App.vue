@@ -28,19 +28,24 @@ export default {
           path: "/"
         },
         {
-          key: "VueApp",
+          key: "qiankun-vue",
           title: "Vue 微应用",
           path: "/vue"
         },
         {
-          key: "ReactApp",
+          key: "qiankun-react",
           title: "React 微应用",
           path: "/react"
         },
         {
-          key: "StaticApp",
+          key: "qiankun-static",
           title: "Static 微应用",
           path: "/static"
+        },
+        {
+          key: "desk-mobile-h5",
+          title: "云智慧H5微应用",
+          path: "/deskMobileH5"
         }
       ]
     }

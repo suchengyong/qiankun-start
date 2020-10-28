@@ -7,14 +7,14 @@ const apps = [
      * props :传递给子应用的参数
      */
     {
-      name: "VueApp",
+      name: "qiankun-vue",
       entry: "//localhost:5001",
       container: "#frame",
       activeRule: "/vue"
     },
     {
-      name: "ReactApp",
-      entry: "//localhost:3000",
+      name: "qiankun-react",
+      entry: "//localhost:5002",
       container: "#frame",
       activeRule: "/react",
       props:{
@@ -22,10 +22,16 @@ const apps = [
       }
     },
     {
-      name: "StaticApp",
+      name: "qiankun-static",
       entry: "//localhost:5003",
       container: "#frame",
       activeRule: "/static"
+    },
+    {
+      name: "desk-mobile-h5",
+      entry: "//localhost:8001/myStarted",
+      container: "#frame",
+      activeRule: "/deskMobileH5"
     },
   ];
   

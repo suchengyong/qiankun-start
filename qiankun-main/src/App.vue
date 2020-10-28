@@ -1,7 +1,7 @@
 <template>
  <section id="cns-main-app">
       <section class="cns-menu-wrapper">
-        <main-menu :menus="menus" />
+        <main-menu :menus="menus" mode=""/>
       </section>
       <section class="cns-frame-wrapper">
         <!-- 主应用渲染区，用于挂载主应用路由触发的组件 -->
@@ -24,17 +24,17 @@ export default {
       menus:[
         {
           key: "Home",
-          title: "主页",
+          title: "主应用",
           path: "/"
         },
         {
           key: "VueApp",
-          title: "Vue 主页",
+          title: "Vue 微应用",
           path: "/vue"
         },
         {
           key: "ReactApp",
-          title: "React 主页",
+          title: "React 微应用",
           path: "/react"
         },
         {

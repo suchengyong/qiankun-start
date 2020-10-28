@@ -14,7 +14,7 @@ const apps = [
     },
     {
       name: "ReactApp",
-      entry: "//localhost:5002",
+      entry: "//localhost:3000",
       container: "#frame",
       activeRule: "/react",
       props:{

@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <div>Home 主应用主页</div>
+    <div class="main"> 我是主应用主页</div>
     <img alt="Vue logo" src="../assets/logo.png">
   </div>
 </template>
@@ -17,5 +17,9 @@ export default {
   width: 100%;
   height: 100%;
   text-align: center;
+}
+.main{
+  font-size: 20px;
+  color:#00B7FF;
 }
 </style>

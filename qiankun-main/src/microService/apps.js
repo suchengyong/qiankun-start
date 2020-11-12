@@ -29,7 +29,7 @@ const apps = [
     },
     {
       name: "desk-mobile-h5",
-      entry: "//localhost:8001/myStarted",
+      entry: "//localhost:8001",
       container: "#frame",
       activeRule: "/deskMobileH5"
     },

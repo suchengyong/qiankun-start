@@ -7,6 +7,10 @@ if (window.__POWERED_BY_QIANKUN__) {
   // eslint-disable-next-line no-undef
   __webpack_public_path__ = window.__INJECTED_PUBLIC_PATH_BY_QIANKUN__;
 }
+const render = ($) => {
+  $('#Container').html("你好，微服务子应用挂载成功");
+  return Promise.resolve();
+}
 // 全局注册
 ((global) => {
   /**
@@ -27,6 +31,7 @@ if (window.__POWERED_BY_QIANKUN__) {
      */
     mount: function(){
       console.log("MicroJqueryApp mount");
+      render($);
       return Promise.resolve();
     },
     /**

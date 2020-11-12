@@ -13,6 +13,7 @@ module.exports = {
     config.output.libraryTarget = "umd";
     // 按需加载相关，设置为 webpackJsonp_packageName 即可
     config.output.jsonpFunction = `webpackJsonp_${packageName}`;
+    config.output.globalObject = "window";
     config.resolve.alias = {
       ...config.resolve.alias,
       "@": path.resolve(__dirname, "src"),

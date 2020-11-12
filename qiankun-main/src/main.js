@@ -10,6 +10,14 @@ Vue.config.productionTip = false
 Vue.use(Antd);
 
 startQiankun({
+  // fetch(url, ...args) {
+  //   if (url === 'http://localhost:8001/public/app.js') {
+  //     return {
+  //       async text() { return '' }
+  //     };
+  //   }
+  //   return window.fetch(url, ...args);
+  // },
   prefetch:false // 取消预加载
 })
 

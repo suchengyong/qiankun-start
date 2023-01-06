@@ -19,7 +19,7 @@
     "@vue/cli-plugin-babel": "~4.4.0",
     "@vue/cli-plugin-router": "~4.4.0",
     "@vue/cli-plugin-vuex": "~4.4.0",
-    "@vue/cli-service": "~4.4.0",
+    "@vue/cli-service": "~5.0.8",
     "core-js": "^3.6.5",
     "nprogress": "^0.2.0",
     "qiankun": "^2.0.16",
